@@ -7,11 +7,10 @@
 
 import UIKit
 
-final class CluesViewModel {
+final class CluesManager {
     private var lettersLabels = [UILabel]()
     private var lastAssertWords = [Character]()
-    private var hideButtons = [UIButton]()
-    
+
     var letterButtons = [UIButton]()
     var letters = [Character]()
     var currentLevelPosition: Int = 0
@@ -67,8 +66,6 @@ final class CluesViewModel {
         let solutionWord = solutions[currentLevelPosition].correctAnswer
         let tryLetterCharacter = Character(answer)
         let solutionArray = Array(solutionWord)
-        let answerLetters: [Character] = solutionWord.compactMap { $0 }.filter { $0 == Character(answer)}
-        let countLetters = answerLetters.count
         
         if lastAssertWords.contains(tryLetterCharacter) {
             return
@@ -80,27 +77,10 @@ final class CluesViewModel {
                 score += 1
             }
         }
-        
-        var count = 0
-        for button in letterButtons {
-            if button.titleLabel?.text == answer {
-                count += 1
-                if count <= countLetters {
-                    button.isHidden = true
-                    hideButtons.append(button)
-                }
-            }
-        }
     }
 
     func getLastAssertWords() -> String {
         return String(lastAssertWords)
-    }
-    
-    func showAllButtons() {
-        self.hideButtons.forEach { (button) in
-            button.isHidden = false
-        }
     }
     
     func getClueTextLabel() -> String {

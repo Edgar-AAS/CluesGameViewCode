@@ -14,7 +14,7 @@
 		720D260E2888856400765C93 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D260D2888856400765C93 /* Solution.swift */; };
 		725ECF8828BE4B9700704192 /* CluesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725ECF8728BE4B9700704192 /* CluesScreen.swift */; };
 		725ECF9128BE4F4900704192 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725ECF9028BE4F4900704192 /* CodeView.swift */; };
-		725ECFA028BE598D00704192 /* CluesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725ECF9F28BE598D00704192 /* CluesViewModel.swift */; };
+		725ECFA028BE598D00704192 /* CluesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725ECF9F28BE598D00704192 /* CluesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		720D260D2888856400765C93 /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
 		725ECF8728BE4B9700704192 /* CluesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CluesScreen.swift; sourceTree = "<group>"; };
 		725ECF9028BE4F4900704192 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
-		725ECF9F28BE598D00704192 /* CluesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CluesViewModel.swift; sourceTree = "<group>"; };
+		725ECF9F28BE598D00704192 /* CluesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CluesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +64,9 @@
 				720D25F22888590C00765C93 /* SceneDelegate.swift */,
 				725ECF9528BE4F5C00704192 /* Extensions */,
 				725ECF8D28BE4EFB00704192 /* Model */,
-				725ECF8E28BE4F0B00704192 /* View */,
+				725ECF9928BE543B00704192 /* CluesManager */,
 				725ECF8F28BE4F1200704192 /* Controller */,
-				725ECF9928BE543B00704192 /* ViewModels */,
+				725ECF8E28BE4F0B00704192 /* View */,
 				720D25F92888591B00765C93 /* Assets.xcassets */,
 				720D25FE2888591B00765C93 /* Info.plist */,
 			);
@@ -105,12 +105,12 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		725ECF9928BE543B00704192 /* ViewModels */ = {
+		725ECF9928BE543B00704192 /* CluesManager */ = {
 			isa = PBXGroup;
 			children = (
-				725ECF9F28BE598D00704192 /* CluesViewModel.swift */,
+				725ECF9F28BE598D00704192 /* CluesManager.swift */,
 			);
-			name = ViewModels;
+			name = CluesManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +184,7 @@
 				720D25F52888590C00765C93 /* CluesViewController.swift in Sources */,
 				720D25F12888590C00765C93 /* AppDelegate.swift in Sources */,
 				720D260E2888856400765C93 /* Solution.swift in Sources */,
-				725ECFA028BE598D00704192 /* CluesViewModel.swift in Sources */,
+				725ECFA028BE598D00704192 /* CluesManager.swift in Sources */,
 				725ECF9128BE4F4900704192 /* CodeView.swift in Sources */,
 				720D25F32888590C00765C93 /* SceneDelegate.swift in Sources */,
 				725ECF8828BE4B9700704192 /* CluesScreen.swift in Sources */,

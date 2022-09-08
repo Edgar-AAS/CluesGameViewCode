@@ -12,7 +12,7 @@ final class CluesViewController: UIViewController {
         return view as? CluesScreen
     }()
     
-    private var quizManager = CluesViewModel()
+    private var quizManager = CluesManager()
     
     override func loadView() {
         view = CluesScreen(delegate: self)
@@ -55,7 +55,6 @@ final class CluesViewController: UIViewController {
             self.customView?.clueLabel.text = self.quizManager.getClueTextLabel()
             self.quizManager.prepareSecretWord()
             self.customView?.letterLabel.text = self.quizManager.getLastAssertWords()
-            self.quizManager.showAllButtons()
         }))
         present(ac, animated: true, completion: nil)
     }
@@ -69,7 +68,6 @@ final class CluesViewController: UIViewController {
             self.quizManager.prepareSecretWord()
             self.customView?.letterLabel.text = self.quizManager.getLastAssertWords()
             self.setScoreText()
-            self.quizManager.showAllButtons()
         }))
         present(finalAlert, animated: true)
     }
